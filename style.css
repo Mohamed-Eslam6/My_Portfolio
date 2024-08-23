@@ -1,0 +1,347 @@
+
+/* Reset margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                                                        /*home*/
+.home{
+    background-image: url("photos/name.jpg");
+    height: 50vw; /* يجعل الارتفاع يغطي 100% من ارتفاع الشاشة */
+    background-size: cover;
+    background-position: center; /* لضبط الصورة لتكون في المنتصف دائمًا */
+    display: flex;
+    flex-direction: column; /* لضمان ترتيب العناصر في عمود */
+    justify-content: space-between;
+}
+.home .nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 20px;
+    top: 0; 
+    align-items: flex-start;
+    padding: 10px 0;
+    z-index: 1000;
+    
+    
+}
+.home .nav-bar ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+.home .nav-bar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: inline-block;
+    text-align: center ;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+.home .nav-bar ul a:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.882); 
+}
+.home .nav-bar ul a:active {
+    transform: scale(0.95); 
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.882); 
+}
+
+.home .nav-bar .name {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+                    /*photo and information*/
+
+.home .info {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    flex-direction: row-reverse; 
+    flex-wrap: wrap; /* يسمح للعناصر بالانتقال لأسفل عند صغر حجم الشاشة */
+    margin: 20px;
+}
+
+.home .info .ph {
+    background-image: url("photos/profile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw; /* عرض الصورة يكون نسبة من عرض الشاشة */
+    height: 30vw; /* ارتفاع الصورة يكون نسبة من عرض الشاشة */
+    max-width: 400px; /* يحدد الحد الأقصى لعرض الصورة */
+    max-height: 400px; /* يحدد الحد الأقصى لارتفاع الصورة */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.home .info .hi {
+    color: white;
+    font-size: 4vw; /* حجم النص نسبة من عرض الشاشة */
+    text-align: center;
+    margin: 20px;
+}
+
+                                                                 /*aboutme*/
+.aboutme {
+    background-image: url("photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+    color: white;
+    font-size: 1.5rem; /* الحجم الافتراضي للخط */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    text-align: left;
+    position: relative; /* يحدد الحاوية كمرجع للموضع المطلق */
+
+}
+                                                                
+.aboutme .pa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-position: right center;
+    padding: 20px;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+.aboutme {
+    position: relative; /* يحدد الحاوية كمرجع للموضع المطلق */
+}
+
+.aboutme .image {
+    position: absolute;
+    right: 0; /* وضع الصورة على أقصى اليمين */
+    top: 20%; /* وضع الصورة في المنتصف عموديًا */
+    background-image: url("photos/profile66.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vw; /* عرض الصورة يكون نسبة من عرض الشاشة */
+    height: 30vw; /* ارتفاع الصورة يكون نسبة من عرض الشاشة */
+    border-radius: 35px;
+    margin-right: 20px;
+    
+}
+.aboutme .abo{
+    flex: 1; 
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+
+                                                                    /*skills*/
+.skills{
+    background-image: url("photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.skills .sk{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.skills .body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.skills .body .programming, .skills .body .projects {
+    width: 90%;
+    border: 3px solid rgba(0, 0, 255, 0.731);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+}
+.skills .body .programming .language, .skills .body .projects .example {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+figure {
+    text-align: center;
+    margin: 10px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    color: white;
+}
+.image {
+    width: 100px; 
+    transition: transform 0.3s ease;
+}
+.image:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+                                                                /*contact*/
+.contact{
+    background-image: url("photos/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.contact .head {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+.contact .bod {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.contact .bod .table .frame{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    color: white;
+}
+.contact .bod .table .frame .small, .contact .bod .table .frame .large {
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 350px;
+}
+.contact .bod .table .frame .large {
+    height: 75px;
+}
+.contact .bod .bar{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.contact .bod .bar .social{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+.image2 {
+    width: 25px; 
+    height:auto;
+    transition: transform 0.3s ease;
+}
+.image2:hover {
+    transform: scale(1.2); 
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .home .info {
+        flex-direction: column; /* تغيير التوزيع ليكون عمودي على الشاشات الصغيرة */
+        text-align: center;
+    }
+
+    .home .info .hi {
+        font-size: 5vw; /* تكبير حجم النص للشاشات الصغيرة */
+    }
+
+    .home .info .ph {
+        width: 50vw; /* تكبير عرض الصورة للشاشات الصغيرة */
+        height: 50vw; /* تكبير ارتفاع الصورة للشاشات الصغيرة */
+    }
+    .home .info .ph {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home .info .hi {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+    .aboutme{
+        font-size: 1.5rem;
+    }
+
+    .aboutme .pa {
+        font-size: 1.2rem;
+    }
+    .aboutme .abo{
+        font-size: 25px;
+    }
+
+    .skills .body .programming, .skills .body .projects {
+        width: 100%;
+    }
+
+    .contact .bod .table .frame {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .info {
+        flex-direction: column; 
+        text-align: center;
+    }
+    home .info .hi {
+        font-size: 6vw; 
+    }
+
+    .home .info .ph {
+        width: 70vw; 
+        height: 70vw; 
+    }
+    .home .info {
+        flex-direction: column;
+    }
+
+    .home .info .hi {
+        font-size: 1.5rem;
+    }
+    .aboutme{
+        font-size: 1.2rem;
+    }
+
+    .aboutme .pa {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .aboutme .abo{
+        font-size: 22px;
+    }
+
+    .skills .sk {
+        font-size: 1.5rem;
+    }
+
+    .contact .head {
+        font-size: 1.5rem;
+    }
+
+    .contact .bod .bar {
+        font-size: 1rem;
+    }
+}
+
