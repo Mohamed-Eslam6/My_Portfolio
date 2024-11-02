@@ -9,11 +9,11 @@
                                                         /*home*/
 .home{
     background-image: url("photos/name.jpg");
-    height: 50vw; /* يجعل الارتفاع يغطي 100% من ارتفاع الشاشة */
+    height: 50vw; 
     background-size: cover;
-    background-position: center; /* لضبط الصورة لتكون في المنتصف دائمًا */
+    background-position: center; 
     display: flex;
-    flex-direction: column; /* لضمان ترتيب العناصر في عمود */
+    flex-direction: column; 
     justify-content: space-between;
 }
 .home .nav-bar{
@@ -68,7 +68,7 @@
     justify-content: space-between; 
     align-items: center; 
     flex-direction: row-reverse; 
-    flex-wrap: wrap; /* يسمح للعناصر بالانتقال لأسفل عند صغر حجم الشاشة */
+    flex-wrap: wrap; 
     margin: 20px;
 }
 
@@ -76,17 +76,17 @@
     background-image: url("photos/profile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 30vw; /* عرض الصورة يكون نسبة من عرض الشاشة */
-    height: 30vw; /* ارتفاع الصورة يكون نسبة من عرض الشاشة */
-    max-width: 400px; /* يحدد الحد الأقصى لعرض الصورة */
-    max-height: 400px; /* يحدد الحد الأقصى لارتفاع الصورة */
+    width: 30vw; 
+    height: 30vw; 
+    max-width: 400px; 
+    max-height: 400px; 
     border-radius: 50%;
     overflow: hidden;
 }
 
 .home .info .hi {
     color: white;
-    font-size: 4vw; /* حجم النص نسبة من عرض الشاشة */
+    font-size: 4vw;
     text-align: center;
     margin: 20px;
 }
@@ -98,13 +98,13 @@
     background-size: cover;
     height: 50vw;
     color: white;
-    font-size: 1.5rem; /* الحجم الافتراضي للخط */
+    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: flex-start;
     text-align: left;
-    position: relative; /* يحدد الحاوية كمرجع للموضع المطلق */
+    position: relative;
 
 }
                                                                 
@@ -121,18 +121,18 @@
 
 }
 .aboutme {
-    position: relative; /* يحدد الحاوية كمرجع للموضع المطلق */
+    position: relative; 
 }
 
 .aboutme .image {
     position: absolute;
-    right: 0; /* وضع الصورة على أقصى اليمين */
-    top: 20%; /* وضع الصورة في المنتصف عموديًا */
+    right: 0; 
+    top: 20%; 
     background-image: url("photos/profile66.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 20vw; /* عرض الصورة يكون نسبة من عرض الشاشة */
-    height: 30vw; /* ارتفاع الصورة يكون نسبة من عرض الشاشة */
+    width: 20vw; 
+    height: 30vw; 
     border-radius: 35px;
     margin-right: 20px;
     
@@ -258,17 +258,17 @@ figcaption {
 /* Media Queries */
 @media (max-width: 768px) {
     .home .info {
-        flex-direction: column; /* تغيير التوزيع ليكون عمودي على الشاشات الصغيرة */
+        flex-direction: column; 
         text-align: center;
     }
 
     .home .info .hi {
-        font-size: 5vw; /* تكبير حجم النص للشاشات الصغيرة */
+        font-size: 5vw; 
     }
 
     .home .info .ph {
-        width: 50vw; /* تكبير عرض الصورة للشاشات الصغيرة */
-        height: 50vw; /* تكبير ارتفاع الصورة للشاشات الصغيرة */
+        width: 50vw; 
+        height: 50vw;
     }
     .home .info .ph {
         width: 200px;
